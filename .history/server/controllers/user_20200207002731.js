@@ -1,4 +1,4 @@
-import User from '../models/user';
+import User from '../models/User';
 
 exports.userSignup = async (req, res) => {
     // user signup
