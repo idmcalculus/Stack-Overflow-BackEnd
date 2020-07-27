@@ -1,10 +1,10 @@
 import express from 'express';
-import userCtrl from '../controllers/user';
+import userController from '../controllers/user';
 
 const router = express.Router();
 
-router.post('/users', userCtrl.userSignup);
-router.post('/users/login', userCtrl.userLogin);
-router.get('/users', userCtrl.searchUser);
+router.post('/users/signup', userController.userSignup);
+router.post('/users/login', userController.userLogin);
+router.get('/users', userController.searchUser);
 
 module.exports = router;
