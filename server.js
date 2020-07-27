@@ -1,6 +1,6 @@
 import '@babel/polyfill';
 import http from 'http';
-import app from './app';
+import app from './server/app';
 
 const normalizePort = val => {
   const port = parseInt(val, 10);
