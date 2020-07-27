@@ -2,18 +2,9 @@ import mongoose from 'mongoose';
 
 const questionSchema = mongoose.Schema({
 	local: {
-		title: {
-			type: String,
-			required: true
-		},
-		description: {
-			type: String,
-			required: true
-		},
-		tags: {
-			type: [String],
-			required: true
-		},
+		title: String,
+		description: String,
+		tags: [String],
 		rating: Number,
 		answersCount: Number,
 		views: Number,

@@ -79,12 +79,12 @@ import User from '../models/user';
         newQuestion.local.user = req.body.user._id;
         newQuestion.local.dateAdded = Date.now();
 
-        newQuestion.save((err, question) => {
+        newQuestion.save((err, q) => {
             if (err) throw err;
             else {
                 User.findById(req.body.user._id, (err, user) => {
                     if (err) return console.error(err);
-                    user.questions.push(question._id);
+                    user.questions.push(q._id);
                     user.save();
                 });
             }
