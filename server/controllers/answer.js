@@ -1,5 +1,5 @@
-import Question from '../models/question';
-import Answer from '../models/answer';
+const Question = require('../models/question');
+const Answer  = require('../models/answer');
 
     exports.searchOneAnswer = async (req, res, next) => {
         Question.findById(req.params._id)

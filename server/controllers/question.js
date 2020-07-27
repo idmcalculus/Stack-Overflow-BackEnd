@@ -1,5 +1,5 @@
-import Question from '../models/question';
-import User from '../models/user';
+const Question = require('../models/question');
+const User = require('../models/user');
 
 
     exports.searchOneQuestion = async (req, res, next) => {

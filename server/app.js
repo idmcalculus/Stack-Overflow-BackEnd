@@ -1,11 +1,10 @@
-import "@babel/polyfill";
-import express from 'express';
-import bodyParser from 'body-parser';
+const express = require('express');
+const bodyParser = require('body-parser');
 
-import user from './routes/user';
-import question from './routes/question';
-import answer from './routes/answer';
-import './models/database/db';
+const user = require('./routes/user');
+const question = require('./routes/question');
+const answer = require('./routes/answer');
+require('./models/database/db');
 
 const app = express();
 

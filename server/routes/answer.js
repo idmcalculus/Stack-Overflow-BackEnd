@@ -1,9 +1,9 @@
-import express from 'express';
-import answerCtrl from '../controllers/answer';
+const express = require('express');
+const answerController = require('../controllers/answer');
 
 const router = express.Router();
 
-router.post('/post-answer/', answerCtrl.postAnswer);
-router.get('/answers/:_id', answerCtrl.searchOneAnswer);
+router.post('/post-answer/', answerController.postAnswer);
+router.get('/answers/:_id', answerController.searchOneAnswer);
 
 module.exports = router;
