@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const user = require('./routes/user');
+const user = require('./routes/User');
 const question = require('./routes/question');
 const answer = require('./routes/answer');
 require('./models/database/db');

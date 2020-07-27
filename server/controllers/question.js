@@ -1,5 +1,5 @@
 const Question = require('../models/question');
-const User = require('../models/user');
+const User = require('../models/User');
 
 
     exports.searchOneQuestion = async (req, res, next) => {
