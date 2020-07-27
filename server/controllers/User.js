@@ -87,11 +87,6 @@ class UserController {
     }
     
     static async searchUser(req, res) {
-        /* User.find({}, (err, users) => {
-            if (err) return console.error(err);
-            res.header('Content-Type', 'application/json');
-            res.status(200).send("{\"data\": " + JSON.stringify(users) + "}");
-        }); */
         try {
             const users = await User.find({});
             res.header('Content-Type', 'application/json')
